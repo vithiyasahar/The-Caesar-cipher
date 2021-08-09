@@ -8,8 +8,8 @@ object Question {
       var str= scala.io.StdIn.readLine();
       val ct=cipher(E,str,5,alphabet);
       println("Encrypted String: "+ct);                                           // Encrypted string
-      val pt=cipher(E,ct,5,alphabet);
-      println("Decrypted String: "+str);                                         // Decrypted string
+      val pt=cipher(D,ct,5,alphabet);
+      println("Decrypted String: "+pt);                                         // Decrypted string
 
 
     }
